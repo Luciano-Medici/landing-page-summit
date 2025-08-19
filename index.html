@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>SUMMIT LATAM</title>
 </head>
 <body>
     <header>
         <div id="logo">
-            <img src="./assets/logo-evoglobal.png" alt="logo evo global">
+            <a href="#home"><img src="./assets/logo-summit1.png" alt="logo SUMMIT LATAM"></a>
         </div>
         <div class="menu">
             <div class="hamburger">
@@ -22,151 +24,148 @@
             </div>
             <ul class="options">
                 <li><a href="#home">Inicio</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Adquirir entrada</a></li>
+                <li><a href="#testimonios">Nuestra historia</a></li>
+                <li><a href="#why">¿Por que asistir?</a></li>
+                <li><a href="#tickets">Entradas</a></li>
             </ul>
         </div>
     </header>
 
     <div id="home" class="hero-parallax">
-        <div class="hero-grid">
-            <div class="hero-text">
-                <h1>EXPANSIÓN<br><span>un viaje hacia tu máximo potencial</span></h1>
-                <p>Una experiencia para cambiar tu vida, tu entorno, aprender de los mejores emprendedores y transformarte en tu mejor versión para lograr el éxito y la felicidad</p>
-                <button>Adquirir entrada</button>
-            </div>
-            <div class="hero-video">
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XidB6TBVG-M?si=sh3VRR13rj-ifUwl&amp;start=432" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1><span>El evento donde descubres tu verdadero potencial</span></h1>
+          <p>Una experiencia transformadora para crecer, aprender de los mejores en cada nicho y rodearte del contexto ideal para sacar tu mejor versión.</p>
+        </div>
+        <div class="hero-video">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QZDQX0bxHA0?si=E5XuRAX0v2pfXLL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg">Reservá tu lugar</button>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2 class="section_title">4 BLOQUES PARA EXPANDIR TU POTENCIAL</h2>
+      
+      <div class="flex">
+        <div class="card">
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cash</title><path d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" /></svg>
+          <h4 class="card__subtitle">FINANZAS</h4>
+          <p class="card__body">Aprende a ordenar tu economía personal y empresarial, toma decisiones inteligentes con tu dinero para multiplicarlo y a diseñar una vida con verdadera libertad financiera.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="card">
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bullhorn-outline</title><path d="M12,8H4A2,2 0 0,0 2,10V14A2,2 0 0,0 4,16H5V20A1,1 0 0,0 6,21H8A1,1 0 0,0 9,20V16H12L17,20V4L12,8M15,15.6L13,14H4V10H13L15,8.4V15.6M21.5,12C21.5,13.71 20.54,15.26 19,16V8C20.53,8.75 21.5,10.3 21.5,12Z" /></svg>
+          <h4 class="card__subtitle">MARKETING Y REDES SOCIALES</h4>
+          <p class="card__body">Descubre cómo construir una marca sólida, posicionarla estratégicamente en redes y atraer clientes con contenido que genere confianza y autoridad.</p>
+        </div>
+
+        <div class="card">
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>human-handsup</title><path d="M5,1C5,3.7 6.56,6.16 9,7.32V22H11V15H13V22H15V7.31C17.44,6.16 19,3.7 19,1H17A5,5 0 0,1 12,6A5,5 0 0,1 7,1M12,1C10.89,1 10,1.89 10,3C10,4.11 10.89,5 12,5C13.11,5 14,4.11 14,3C14,1.89 13.11,1 12,1Z" /></svg>      
+          <h4 class="card__subtitle">MINDSET Y LIDERAZGO</h4>
+          <p class="card__body">Desarrolla una inteligencia emocional elevada, ten una mayor claridad en tus objetivos y la mentalidad empresarial necesaria para tomar decisiones firmes y liderar con confianza en cualquier contexto.</p>
+        </div>
+
+        <div class="card">
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>meditation</title><path d="M12 4C13.11 4 14 4.89 14 6S13.11 8 12 8 10 7.11 10 6 10.9 4 12 4M21 16V14C18.76 14 16.84 13.04 15.4 11.32L14.06 9.72C13.68 9.26 13.12 9 12.53 9H11.5C10.89 9 10.33 9.26 9.95 9.72L8.61 11.32C7.16 13.04 5.24 14 3 14V16C5.77 16 8.19 14.83 10 12.75V15L6.12 16.55C5.45 16.82 5 17.5 5 18.21C5 19.2 5.8 20 6.79 20H9V19.5C9 18.12 10.12 17 11.5 17H14.5C14.78 17 15 17.22 15 17.5S14.78 18 14.5 18H11.5C10.67 18 10 18.67 10 19.5V20H17.21C18.2 20 19 19.2 19 18.21C19 17.5 18.55 16.82 17.88 16.55L14 15V12.75C15.81 14.83 18.23 16 21 16Z" /></svg>
+          <h4 class="card__subtitle">WELLNESS Y RENDIMIENTO</h4>
+          <p class="card__body">Recupera tu energía vital, incorpora hábitos y técnicas de bienestar, y aprende a aplicar tu salud como motor de éxito en tu vida y tus negocios.</p>
         </div>
       </div>
-
-    <section class="bloques">
-        <div class="container">
-          <h2>¿QUE VAS A VIVIR EN EL SUMMIT?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro accusantium omnis ex recusandae, eveniet eaque molestias quod ratione alias rem facere debitis quo et nam possimus, mollitia aspernatur corrupti vel.</p>
-          <div class="cards-grid">
-            <!-- Card 1 -->
-            <div class="bloque">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cash</title><path d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" /></svg>
-                <h3>FINANZAS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="bloque">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bullhorn-outline</title><path d="M12,8H4A2,2 0 0,0 2,10V14A2,2 0 0,0 4,16H5V20A1,1 0 0,0 6,21H8A1,1 0 0,0 9,20V16H12L17,20V4L12,8M15,15.6L13,14H4V10H13L15,8.4V15.6M21.5,12C21.5,13.71 20.54,15.26 19,16V8C20.53,8.75 21.5,10.3 21.5,12Z" /></svg>
-                <h3>MARKETING Y REDES SOCIALES</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="bloque">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>human-handsup</title><path d="M5,1C5,3.7 6.56,6.16 9,7.32V22H11V15H13V22H15V7.31C17.44,6.16 19,3.7 19,1H17A5,5 0 0,1 12,6A5,5 0 0,1 7,1M12,1C10.89,1 10,1.89 10,3C10,4.11 10.89,5 12,5C13.11,5 14,4.11 14,3C14,1.89 13.11,1 12,1Z" /></svg>
-                <h3>LIDERAZGO</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            
-            <!-- Card 4 -->
-            <div class="bloque">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>meditation</title><path d="M12 4C13.11 4 14 4.89 14 6S13.11 8 12 8 10 7.11 10 6 10.9 4 12 4M21 16V14C18.76 14 16.84 13.04 15.4 11.32L14.06 9.72C13.68 9.26 13.12 9 12.53 9H11.5C10.89 9 10.33 9.26 9.95 9.72L8.61 11.32C7.16 13.04 5.24 14 3 14V16C5.77 16 8.19 14.83 10 12.75V15L6.12 16.55C5.45 16.82 5 17.5 5 18.21C5 19.2 5.8 20 6.79 20H9V19.5C9 18.12 10.12 17 11.5 17H14.5C14.78 17 15 17.22 15 17.5S14.78 18 14.5 18H11.5C10.67 18 10 18.67 10 19.5V20H17.21C18.2 20 19 19.2 19 18.21C19 17.5 18.55 16.82 17.88 16.55L14 15V12.75C15.81 14.83 18.23 16 21 16Z" /></svg>
-                <h3>WELLNES</h3>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-          
-        </div>
-      </section>
-
-      <section class="testimonios">
-        <h2>Testimonios</h2>
-        
-        <div class="testimonios-container">
-          <div class="video-testimonio">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/csVWGuXCqBU?si=_-y9mgGPLYMGJwRm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-          <div class="video-testimonio">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ylyjgx22NtM?si=Ztlon1xBKDn2tKyh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-          <div class="video-testimonio">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zp7fjD5XFDE?si=NGZkVhn3Prtl-PS5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-      </section>
-
-    <section class="razones-section">
-        <div class="container">
-            <h2>LAS 3 RAZONES POR LAS QUE ESTE SUMMIT<br>Marcará un antes y un después en tu vida</h2>
-          
-            <div class="razones-grid">
-                <!-- Tarjeta 1 -->
-                <div class="razon-card networking-bg">
-                    <h3>1. Networking<br><span>Auténtico</span></h3>
-                    <div class="contenido">
-                        <p>No venís solo a aprender,<br>Venís a conectar.</p>
-                
-                        <div class="highlight">
-                            <p><strong>VAS A COMPARTIR:</strong><br>
-                            Experiencias en desarrollo personal, negocios digitales, salud financiera y mucho más.</p>
-                            <p><strong>NUEVAS IDEAS Y CONEXIONES QUE PUEDEN ACELERAR TU CRECIMIENTO.</strong></p>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Tarjeta 2 -->
-                <div class="razon-card speakers-bg">
-                    <h3>2. Speakers<br><span>De Elite</span></h3>
-                    <div class="contenido">
-                        <p>Los mejores de habla hispana<br>en un solo lugar.</p>
-                        
-                        <div class="highlight">
-                            <p><strong>VAS A APRENDER:</strong><br>
-                            De líderes con resultados comprobados en negocios digitales y transformación personal.</p>
-                            
-                            <p><strong>ESTRATEGIAS COMPROBADAS QUE PUEDES APLICAR INMEDIATAMENTE.</strong></p>
-                        </div>
-                    </div>
-                </div>
-            
-            <!-- Tarjeta 3 -->
-                <div class="razon-card experiencia-bg">
-                    <h3>3. Experiencia<br><span>Transformadora</span></h3>
-                    <div class="contenido">
-                        <p>No es otro evento más,<br>es un punto de inflexión.</p>
-                        
-                        <div class="highlight">
-                            <p><strong>VAS A VIVIR:</strong><br>
-                            Dinámicas diseñadas para sacarte de tu zona de confort y disparar tu potencial.</p>
-                            
-                            <p><strong>UNA INMERSIÓN TOTAL QUE REORDENARÁ TUS PRIORIDADES.</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <hr>
     </section>
 
-    <section class="entradas-section">
-        <div class="container">
-          <h2>ELIGE TU EXPERIENCIA</h2>
+    <section class="section next-event">
+      <h2 class="next-event__subtitle">Próximo Evento</h2>
+      <h1 class="next-event__title">SUMMIT</h1>
+      <div class="next-event__year">2025</div>
+      
+      <div class="next-event__date">8 DE NOVIEMBRE</div>
+      <div class="next-event__location">CÓRDOBA, CAPITAL</div>
+      
+      <hr class="next-event__divider">
+      
+      <a href="#" class="btn btn-primary btn-lg">Reservá tu lugar</a>
+  </section>
+
+    <section id="testimonios" class="testimonios">
+        <h2 class="section_title">NUESTRA HISTORIA</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XidB6TBVG-M?si=Bg_AbfWjDQJMXZyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <hr>
+      </section>
+
+    <section id="why" class="section">
+      <h2 class="section_title">¿POR QUE ASISTIR AL SUMMIT?</h2>
+    
+      <div class="grid">
+        <!-- Tarjeta 1 -->
+        <div class="card card--bg-image card--networking">
+            <h3 class="card__title">1. Networking<br><span>Auténtico</span></h3>
+            <div class="card__content">
+                <p>No venís solo a aprender,<br>Venís a conectar.</p>
+        
+                <div class="card__highlight">
+                    <p><strong>VAS A COMPARTIR:</strong><br>
+                    Experiencias en desarrollo personal, negocios digitales, salud financiera y mucho más.</p>
+                    <p><strong>NUEVAS IDEAS Y CONEXIONES QUE PUEDEN ACELERAR TU CRECIMIENTO.</strong></p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tarjeta 2 -->
+        <div class="card card--bg-image card--speakers">
+            <h3 class="card__title">2. Speakers<br><span>De Elite</span></h3>
+            <div class="card__content">
+                <p>Los mejores de habla hispana<br>en un solo lugar.</p>
+                
+                <div class="card__highlight">
+                    <p><strong>VAS A APRENDER:</strong><br>
+                    De líderes con resultados comprobados en negocios digitales y transformación personal.</p>
+                    
+                    <p><strong>ESTRATEGIAS COMPROBADAS QUE PUEDES APLICAR INMEDIATAMENTE.</strong></p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tarjeta 3 -->
+        <div class="card card--bg-image card--experiencia">
+            <h3 class="card__title">3. Experiencia<br><span>Transformadora</span></h3>
+            <div class="card__content">
+                <p>No es otro evento más,<br>es un punto de inflexión.</p>
+                
+                <div class="card__highlight">
+                    <p><strong>VAS A VIVIR:</strong><br>
+                    Dinámicas diseñadas para sacarte de tu zona de confort y disparar tu potencial.</p>
+                    
+                    <p><strong>UNA INMERSIÓN TOTAL QUE REORDENARÁ TUS PRIORIDADES.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+      <hr>      
+    </section>
+    
+    <section id="tickets" class="section">
+          <h2 class="section_title">ELIGE TU EXPERIENCIA</h2>
           
           <div class="entradas-grid">
             <!-- Entrada General -->
             <div class="entrada-card general">
+              <div class="badge-general">GENERAL</div>
               <h3>ENTRADA GENERAL</h3>
-              <p class="subtitulo">LA EXPERIENCIA QUE INICIARÁ TU VERDADERO CAMINO</p>
               
               <ul class="beneficios">
-                <li>Vas a conectar con tu mejor versión y desbloquear tu máximo potencial</li>
-                <li>Red de personas viviendo al mismo ritmo</li>
-                <li>Dinámicas de alto impacto junto a miles de personas</li>
-                <li>Acceso a la comunidad de experiencias</li>
-                <li>Oportunidad de tener un Bono Extra</li>
+                <li>Acceso general a la jornada del día sábado</li>
+                <li>Networking con otros emprendedores en un contexto que potencia tu crecimiento</li>
+                <li>Recibirás formaciones de alto valor</li>
+                <li>Te llevarás un mapa de prácticas diarias para aplicar lo aprendido</li>
+                <li>Vivirás experiencias de impacto</li>
+                <li>Otras sorpresas exclusivas del evento</li>
               </ul>
               
               <button class="btn-reservar">RESERVAR AHORA</button>
@@ -176,52 +175,37 @@
             <div class="entrada-card vip">
               <div class="badge-vip">VIP</div>
               <h3>ENTRADA VIP</h3>
-              <p class="subtitulo">UNA EXPERIENCIA MÁS CERCANA, CÓMODA Y CON EJERCICIOS EXCLUSIVOS</p>
               
               <ul class="beneficios">
-                <li>Acceso sábado y domingo</li>
-                <li>Asientos en primera fila</li>
-                <li>Merchandising Exclusivo</li>
-                <li>FIREWALK EXPERIENCE: caminata sobre fuego más grande de Argentina</li>
-                <li>Cóctel + Club VIP</li>
-                <li>Zona VIP de Networking</li>
+                <li>Acceso VIP a la jornada del día sábado</li>
+                <li>Capacitación especial exclusiva para VIP el día domingo</li>
+                <li>Networking exclusivo con los speakers</li>
+                <li>Copia del libro “El nuevo password para generar riqueza” firmado por el autor German Castelo</li>
+                <li>Foto oficial del evento con speakers</li>
+                <li>Grabación de las formaciones del evento en 4k</li>
+                <li>Networking con otros emprendedores en un contexto que potencia tu crecimiento</li>
+                <li>Recibirás formaciones de alto valor</li>
+                <li>Te llevarás un mapa de prácticas diarias para aplicar lo aprendido</li>
+                <li>Vivirás experiencias de impacto</li>
+                <li>Otras sorpresas exclusivas del evento</li>
               </ul>
               
               <button class="btn-reservar">RESERVAR AHORA</button>
             </div>
           </div>
-        </div>
       </section>
 
       <footer class="site-footer">
         <div class="footer-container">
           <div class="footer-brand">
-            <img src="./assets/logo-evoglobal.png" alt="EVO Global" class="footer-logo">
-            <p class="footer-slogan">Expansión - Un viaje hacia tu máximo potencial</p>
-            <div class="social-links">
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            </div>
+            <img src="./assets/logo-summit1.png" alt="SUMMIT LATAM" class="footer-logo">
           </div>
       
           <div class="footer-links">
-            <div class="links-column">
-              <h4>Evento</h4>
-              <ul>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Speakers</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Experiencias</a></li>
-              </ul>
-            </div>
       
             <div class="links-column">
               <h4>Información</h4>
               <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contacto</a></li>
                 <li><a href="#">Términos</a></li>
                 <li><a href="#">Privacidad</a></li>
               </ul>
@@ -231,15 +215,14 @@
               <h4>Contacto</h4>
               <ul>
                 <li><i class="fas fa-envelope"></i> hola@evoglobal.com</li>
-                <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
-                <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                <li><i class="fas fa-map-marker-alt"></i> Córdoba, Argentina</li>
               </ul>
             </div>
           </div>
         </div>
       
         <div class="footer-bottom">
-          <p>&copy; 2025 EVO Global. Todos los derechos reservados.</p>
+          <p>&copy; 2025 SUMMIT LATAM.<br>Todos los derechos reservados.</p>
         </div>
       </footer>
 
