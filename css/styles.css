@@ -104,7 +104,7 @@
   --padding-section-mobile:1rem 1.5rem;
   --padding-section-desktop:5rem 3rem;
   --text-size-section-title-mobile:1.5rem;
-  --text-size-section-title:1.5rem;
+  --text-size-section-title:2.8rem;
   /* Grid */
   --gap-card-mobile:1.5rem;
   --gap-card-desktop:2.5rem;
@@ -167,6 +167,7 @@
   flex: 1;
   border: 1px solid transparent;
   text-align: center;
+  width: 100%;
 }
 
 .card:hover {
@@ -397,13 +398,6 @@
   }
   }
   
-  /* Mega Desktop */
-  @media (min-width: 1600px) {
-  header {
-  padding:var(--padding-mega-desktop)
-  }
-  }
-  
   /* navbar */
   .hamburger {
   position:relative;
@@ -521,12 +515,6 @@
   width:100%
   }
   
-  /* Mega Desktop */
-  @media (min-width: 1600px) {
-  .menu .options {
-  gap:3.5rem
-  }
-  }
   }
   
   /* icons navbar */
@@ -636,29 +624,11 @@
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  height: 90vh;
   padding:var(--padding-mobile-section);
   display:flex;
+  justify-content: center;
   align-items:center;
   position:relative
-  }
-  
-  .hero-grid {
-  display:grid;
-  grid-template-areas: "text" "video";
-  gap:var(--gap-section);
-  width:100%;
-  }
-  
-  .hero-text {
-  grid-area:text;
-  z-index:2;
-  text-align: center;
-  }
-  
-  .hero-video {
-  grid-area:video;
-  z-index:2
   }
   
   .hero-text h1 {
@@ -680,6 +650,49 @@
   line-height:1.6;
   color:var(--color-text-alt)
   }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* por defecto en mobile: 1 columna */
+    gap: 1.5rem; /* separación entre elementos */
+    min-height: 85vh;
+    max-width: 100%;
+  }
+
+  .hero-btn{
+    place-self: center;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+
+  /* Versión desktop */
+  @media (min-width: 768px) {
+    .hero-grid {
+      grid-template-columns: 1fr 1fr; /* dos columnas */
+      grid-template-rows: auto auto;  /* dos filas */
+      align-items: center;
+    }
+  
+    .hero-text {
+      grid-column: 1; /* primera columna */
+      grid-row: 1;    /* primera fila */
+      text-align: left;
+    }
+  
+    .hero-btn {
+      grid-column: 1/3; /* primera columna */
+      grid-row: 2;    /* segunda fila */
+      justify-self: center;
+      align-self: start;
+    }
+  
+    .hero-video {
+      grid-column: 2;      /* segunda columna */
+      grid-row: 1;
+    }
+  }
   
   /* Desktop */
   @media (min-width: 1024px) {
@@ -687,18 +700,6 @@
   padding:var(--padding-desktop-section);
   background-attachment:fixed
   }
-  
-  .hero-grid {
-  grid-template-areas:"text video";
-  grid-template-columns:1fr 1fr;
-  /* margin:0 auto; */
-  gap:var(--gap-section-large)
-  }
-
-  .hero-text{
-    text-align:start;
-  }
-  
   .hero-text h1 {
   font-size:var(--text-size-desktop-title)
   }
@@ -722,6 +723,28 @@
   .hero-text h1 {
   font-size:3.5rem
   }
+  }
+
+  /* Bloques section */
+
+  .grid-bloques {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: una card por fila */
+    gap: 1.5rem; /* separación entre cards */
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) {
+    .grid-bloques {
+      grid-template-columns: repeat(2, 1fr); /* 2 y 2 */
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .grid-bloques {
+      grid-template-columns: repeat(4, 1fr); /* 4 en una fila */
+    }
   }
   
   /* Tickets section */
@@ -994,6 +1017,7 @@
   justify-content:flex-start
   }
   }
+
   h2::after {
     content:'';
     position:absolute;
@@ -1149,32 +1173,72 @@
   }
 }
 
-/* Testimonios */
 .testimonios {
-  padding:var(--padding-section-mobile);
-  background-color:var(--color-bg);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
-  /* height: 70vh; */
-  justify-content: center;
-  align-items: start;
-  margin-bottom: 4rem;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: var(--padding-section-mobile);
+  gap: 2rem;
+}
+
+.testimonios .testimonios-text{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.testimonios .section_title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.testimonios p{
+  color: var(--color-text);
+  padding-top: 1.8rem;
+}
+
+/* Video responsivo */
+.testimonios .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonios .video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .testimonios {
+    grid-template-columns: 1fr 1fr; /* texto - video */
+    grid-template-rows: 1fr;
+    padding: var(--padding-section-desktop);
+    min-height: auto; /* no obligamos a ocupar 100vh en desktop */
+  }
+
+  .testimonios .testimonios-text{
+    grid-column: 2;
   }
 
   .testimonios .section_title {
-    font-size: 2rem;
-    position:relative;
+    text-align: left;
+    align-self: center;
   }
 
+  .testimonios .section_title::after {
+    left: 40%;
+    width: 80%;
+  }
 
-  @media (min-width: 1024px) {
-  .testimonios {
-  padding:var(--padding-section-desktop)
+  .testimonios .video-container {
+    max-width: 100%; /* que use bien la columna */
+    box-shadow: var(--shadow-lg);
   }
-  
-  h2.section_title {
-  font-size:1rem;
-  position:relative
-  }
-  }
+}
