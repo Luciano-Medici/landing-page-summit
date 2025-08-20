@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Términos y Condiciones — Summit Latam</title>
+  <meta name="description" content="Términos y Condiciones de Summit Latam." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./css/terminos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./index.html" aria-label="Inicio"><img src="./assets/logo-summit1.png" alt="summit latam logo"></a>
+    </div>
+  </header>
+
+  <main>
+    <article class="container card" role="article" aria-labelledby="title">
+      <h1 id="title">Términos y Condiciones</h1>
+      <p class="intro">
+        Al registrarte y comprar tu entrada para Summit Latam, aceptás los siguientes términos:
+      </p>
+
+      <section class="tc-item">
+        <h2>Entradas</h2>
+        <p>
+          Las entradas son personales e intransferibles. No se permiten reembolsos, salvo casos
+          excepcionales que serán evaluados por la organización.
+        </p>
+      </section>
+
+      <section class="tc-item">
+        <h2>Modificaciones del evento</h2>
+        <p>
+          La organización se reserva el derecho de modificar fechas, horarios, ubicaciones o contenido
+          del evento por razones de fuerza mayor o logística.
+        </p>
+      </section>
+
+      <section class="tc-item">
+        <h2>Participación</h2>
+        <p>
+          Al asistir, aceptás cumplir con las indicaciones del staff y respetar a otros participantes
+          y speakers.
+        </p>
+      </section>
+
+      <section class="tc-item">
+        <h2>Propiedad intelectual</h2>
+        <p>
+          Todo el contenido del evento (presentaciones, videos, materiales) es propiedad de la
+          organización y los speakers. No se permite reproducir, grabar o compartir sin autorización.
+        </p>
+      </section>
+
+      <section class="tc-item">
+        <h2>Responsabilidad</h2>
+        <p>
+          La organización no se hace responsable por pérdidas, daños o incidentes que ocurran durante
+          el evento. La participación es bajo responsabilidad propia.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <p class="confirm">
+        Al registrarte, confirmás haber leído y aceptado estos términos.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Summit Latam. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Año automático en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
