@@ -1271,3 +1271,35 @@
     box-shadow: var(--shadow-lg);
   }
 }
+
+/* Solución mejorada para el header sticky */
+#home, #testimonios, #why, #tickets {
+    scroll-margin-top: 40px; /* Altura aproximada del header */
+}
+
+/* Ajustar el scroll-padding para un desplazamiento suave */
+html {
+    scroll-padding-top: 40px;
+    scroll-behavior: smooth;
+}
+
+/* Ajustes específicos para cada sección si es necesario */
+#home {
+    padding-top: 0; /* La sección home no necesita padding adicional */
+    margin-top: 0;
+}
+
+#testimonios, #why, #tickets {
+    position: relative;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 1023px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+    
+    #home, #testimonios, #why, #tickets {
+        scroll-margin-top: 60px;
+    }
+}
